@@ -1,6 +1,11 @@
 # Basic routing setup for PHP
 
-You will have three main types of files:
+The web root is the app folder. All scripts such as [connection.php](connection.php) 
+are kept above the this folder. This means that the scripts can't be loaded in a browser, accidentally or otherwise. As well as potentially doing something damaging,
+like destroying and rebuilding the database, they can fail in ways that give away
+information about your website.
+
+Inside the app folder you will have three types of file:
 
 1.	**Controller** (see [app/index.php](app/index.php)): 
     This is the entry point for the application. Every request comes to this script, whose job is to determine which content file to load based on the URL and sets any necessary variables. It then loads the base template.
@@ -13,8 +18,5 @@ You will have three main types of files:
 
     These files contain only the HTML and PHP for the content relevant to a specific request. They don't include the surrounding <html>, <head>, or <body> tags. The page to be included is determined by the Controller.
 
-Note that all scripts such as [connection.php](connection.php) are kept above the app
-folder, which is the web root. This means they can't be loaded in a browser, 
-accidentally or otherwise.
 
 

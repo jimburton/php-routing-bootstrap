@@ -1,7 +1,7 @@
 # Basic routing setup for PHP
 
 The web root is the app folder. All scripts such as [connection.php](connection.php) 
-are kept above the this folder. This means that the scripts can't be loaded in a browser, accidentally or otherwise. As well as potentially doing something damaging,
+are kept **above** this folder. This means that the scripts can't be loaded in a browser, accidentally or otherwise. As well as potentially doing something damaging,
 like destroying and rebuilding the database, they can fail in ways that give away
 information about your website.
 

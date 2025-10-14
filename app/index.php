@@ -16,5 +16,5 @@ if ($page === 'home') {
 }
 
 // Load the base template which will in turn include $contentFile
-include 'layout.php';
+include 'base.php';
 ?>

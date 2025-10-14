@@ -16,7 +16,7 @@ Inside the app folder you will have three types of file:
 
 3.	**Page-Specific Content** (e.g. [app/home.php](app/home.php)): 
 
-    These files contain only the HTML and PHP for the content relevant to a specific request. They don't include the surrounding <html>, <head>, or <body> tags. The page to be included is determined by the Controller.
+    These files contain only the HTML and PHP for the content relevant to a specific request. Which of these pages is to be included is determined by the Controller.
 
 
 

@@ -13,4 +13,8 @@ You will have three main types of files:
 
     These files contain only the HTML and PHP for the content relevant to a specific request. They don't include the surrounding <html>, <head>, or <body> tags. The page to be included is determined by the Controller.
 
+Note that all scripts such as [connection.php](connection.php) are kept above the app
+folder, which is the web root. This means they can't be loaded in a browser, 
+accidentally or otherwise.
+
 

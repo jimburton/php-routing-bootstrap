@@ -5,7 +5,7 @@ You will have three main types of files:
 1.	Base Template/Layout File ([app/base.php]): 
 
     This file will contain the common HTML structure, including the <!DOCTYPE>, <head>, banner/header, footer, the Bootstrap layout and a specific spot where the page-specific content will go.
-    ```php
+    ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,3 +69,4 @@ if ($page === 'home') {
 include 'layout.php';
 ?>
 ```
+

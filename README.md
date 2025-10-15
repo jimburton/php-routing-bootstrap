@@ -7,7 +7,9 @@ potentially doing something damaging, like destroying and rebuilding the databas
 they can fail in ways that give away important information that can make your 
 website vulnerable.
 
-Inside the app folder you will have three types of file:
+The app is structured using the 
+**[https://en.wikipedia.org/wiki/Front_controller](Front Controller pattern)**. 
+Inside the app folder there are three types of file:
 
 1.	**Controller** (see [app/index.php](app/index.php)): 
     This is the entry point for the application. Every request comes to this script, whose job is to determine which content file to load based on the URL and sets any necessary variables. It then loads the base template.

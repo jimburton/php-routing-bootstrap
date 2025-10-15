@@ -21,10 +21,10 @@ Inside the app folder there are three types of file:
 
 2.	**Base Template** (see [app/base.php](app/base.php)): 
 
-    This file will contain the common HTML "scaffolding" structure, including the
-    <!DOCTYPE>, <head> and links to the CSS and JS files needed by Bootstrap. It will
-    include the [header](app/header.php) and [sidebar](app/sidebar.php) php files and
-    has a specific point where the page-specific content will go.
+    This file will contain the common HTML "scaffolding" structure and links to the 
+    CSS and JS files needed by Bootstrap. It will include the [header](app/header.php)
+    and [sidebar](app/sidebar.php) php files, and has a specific point where the 
+    page-specific content will go.
 
 3.	**Page-Specific Content** (e.g. [app/home.php](app/home.php)): 
 

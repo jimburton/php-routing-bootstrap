@@ -8,7 +8,7 @@ they can fail in ways that give away important information that can make your
 website vulnerable.
 
 The app is structured using the 
-**[https://en.wikipedia.org/wiki/Front_controller](Front Controller pattern)**. 
+**[Front Controller pattern](https://en.wikipedia.org/wiki/Front_controller)**. 
 Inside the app folder there are three types of file:
 
 1.	**Controller** (see [app/index.php](app/index.php)): 

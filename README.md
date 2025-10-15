@@ -12,7 +12,9 @@ The app is structured using the
 Inside the app folder there are three types of file:
 
 1.	**Controller** (see [app/index.php](app/index.php)): 
-    This is the entry point for the application. Every request comes to this script, whose job is to determine which content file to load based on the URL and sets any necessary variables. It then loads the base template.
+    This is the entry point for the application. Every request comes to this script,
+    with a url such as `/index.php?page=*contentPage*` or simply `/?page=*contentPage`.
+    The controller's job is to determine which content file to load based on the URL and set any necessary variables. It then loads the base template.
 
 2.	**Base Template** (see [app/base.php](app/base.php)): 
 

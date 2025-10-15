@@ -14,17 +14,19 @@ Inside the app folder there are three types of file:
 1.	**Controller** (see [app/index.php](app/index.php)): 
     This is the entry point for the application. Every request comes to this script,
     with a url such as `/index.php?page=<contentPage>` or simply 
-    `/?page=<contentPage>`, where `<contentPage>` is a variable. The controller's 
-    job is to determine which content file to load based on the URL and set any
-    necessary variables. It then loads the base template.
+    `/?page=<contentPage>`. The Controller's job is to determine which content file 
+    to load based on the URL and set any necessary variables. If `page` is not present
+    in the querystring (e.g. a request for `/`) then the home page content will be
+    served. The Controller then loads the base template.
 
 2.	**Base Template** (see [app/base.php](app/base.php)): 
 
-    This file will contain the common HTML structure, including the <!DOCTYPE>, <head> and links to the CSS and JS files needed by Bootstrap. It will include the [header](app/header.php) and [sidebar](app/sidebar.php) php files and has a specific point where the page-specific content will go.
+    This file will contain the common HTML "scaffolding" structure, including the
+    <!DOCTYPE>, <head> and links to the CSS and JS files needed by Bootstrap. It will
+    include the [header](app/header.php) and [sidebar](app/sidebar.php) php files and
+    has a specific point where the page-specific content will go.
 
 3.	**Page-Specific Content** (e.g. [app/home.php](app/home.php)): 
 
-    These files contain only the HTML and PHP for the content relevant to a specific request. Which of these pages is to be included is determined by the Controller.
-
-
-
+    These files contain only the HTML and PHP for the content relevant to a specific
+    request. Which of these pages is to be included is determined by the Controller.
